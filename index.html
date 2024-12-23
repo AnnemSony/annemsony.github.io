@@ -3,149 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sony Annem Portfolio</title>
+    <title>Sony Annem - Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            line-height: 1.6;
             color: #333;
         }
-        header, footer {
-            background-color: #282c34;
+        header {
+            background: #0073e6;
             color: white;
+            padding: 1rem 0;
             text-align: center;
-            padding: 1em 0;
+        }
+        nav {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #0073e6;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         .container {
-            padding: 20px;
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
         }
-        h1, h2, h3 {
-            color: #0056b3;
+        section {
+            margin: 2rem 0;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #f4f4f4;
+            margin-top: 2rem;
         }
         ul {
             list-style-type: none;
             padding: 0;
         }
         li {
-            margin-bottom: 10px;
+            margin-bottom: 0.5rem;
         }
-        a {
+        h1, h2 {
             color: #0056b3;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .section h2 {
-            border-bottom: 2px solid #0056b3;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-        }
-        .highlight {
-            background-color: #e7f3ff;
-            padding: 5px;
-            border-radius: 5px;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Sony Annem</h1>
-        <p>+1 667-289-9454 | California | <a href="https://www.linkedin.com/in/sony-annem/">LinkedIn</a> | annemsony.137@gmail.com</p>
+        <p>AI Researcher | Data Scientist | Developer</p>
     </header>
 
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills & Experience</a>
+        <a href="#employment">Employment</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <div class="container">
-        <section class="section">
-            <h2>Technical Skills</h2>
-            <p><strong>Programming:</strong> Python, R, C, Java.</p>
-            <p><strong>Tools and Libraries:</strong> TensorFlow, PyTorch, Pytesseract, scikit-learn, Git, Detectron2, SciPy, OpenCV, Hugging Face Transformers, OpenAI Gym.</p>
-            <p><strong>Skills:</strong> Digital Image Processing, Machine Learning, Computer Vision with Deep Learning, LLM’s and Reinforcement Learning.</p>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate AI researcher with 4+ years of experience in developing machine learning applications and working on innovative projects in natural language processing, computer vision, and distributed computing. I hold a Master’s degree in Computer Science with a GPA of 3.9 from the University of North Carolina Greensboro.
+            </p>
         </section>
 
-        <section class="section">
+        <section id="skills">
+            <h2>Skills & Experience</h2>
+            <ul>
+                <li><strong>Programming:</strong> Python, R, C, Bash</li>
+                <li><strong>Frameworks:</strong> PyTorch, TensorFlow, scikit-learn</li>
+                <li><strong>Libraries:</strong> Hugging Face, OpenCV, Detectron2</li>
+                <li><strong>Tools:</strong> Git, Google Cloud Platform, AWS</li>
+            </ul>
+        </section>
+
+        <section id="employment">
             <h2>Employment</h2>
             <ul>
                 <li>
                     <h3>Machine Learning Engineer - Freelancer</h3>
                     <p><strong>Omdena, Remote | August 2024 - December 2024</strong></p>
                     <ul>
-                        <li>Manually adjusted point cloud data for industrial roofs using aerial datasets from the IECO website.</li>
-                        <li>Worked on Neural Radiance Fields and the PointNet framework for 3D Roof Reconstruction.</li>
+                        <li>Adjusted point cloud data for industrial roofs using aerial datasets.</li>
+                        <li>Worked on Neural Radiance Fields and PointNet framework for 3D roof reconstruction.</li>
                         <li>Integrated YOLOv11 with Segment Anything Model-2 for detection and segmentation tasks.</li>
                     </ul>
                 </li>
                 <li>
                     <h3>NLP Researcher</h3>
-                    <p><strong>Clinical NLP Lab, Greensboro, NC, USA | September 2023 - July 2024</strong></p>
+                    <p><strong>Clinical NLP Lab, Greensboro, NC | September 2023 - July 2024</strong></p>
                     <ul>
-                        <li>Designed a <span class="highlight">Chroma Vector database</span> and launched it on GCP, boosting efficiency by 20%.</li>
-                        <li>Fine-tuned GPT-3.5 turbo for concept mapping tasks and optimized retrieval performance with RAG and reranking strategies.</li>
-                        <li>Awarded <span class="highlight">Dorothy Munroe Research Grant</span> and Best Poster Presentation at UNC, NC.</li>
+                        <li>Designed a Chroma Vector database and launched it on GCP, boosting efficiency by 20%.</li>
+                        <li>Fine-tuned GPT-3.5 turbo for concept mapping tasks.</li>
+                        <li>Optimized retrieval performance with RAG and reranking strategies.</li>
                     </ul>
                 </li>
                 <li>
                     <h3>AI Intern</h3>
-                    <p><strong>Atrium Health Wake Forest School of Medicine, Winston Salem, NC, USA | May 2023 - August 2023</strong></p>
+                    <p><strong>Atrium Health Wake Forest School of Medicine, NC | May 2023 - August 2023</strong></p>
                     <ul>
-                        <li>Developed a web application to convert pathology images into 512x512 patches, saving time for colleagues.</li>
-                        <li>Trained Multi-Instance Learning models for colon tumor detection and fine-tuned segmentation models like UNET and Mask R-CNN.</li>
-                        <li>Published research on SPIE Medical Imaging Conference and NCBI’s website.</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>Volunteer Research</h3>
-                    <p><strong>Advanced Research Image Analysis, North Carolina, USA | August 2022 - May 2023</strong></p>
-                    <ul>
-                        <li>Labeled 500 TIFF files and enhanced images using Histogram Equalization and Denoising.</li>
-                        <li>Applied 3D CNN and object detection models to identify chromatin positions in cancer cells.</li>
-                        <li>Developed synthetic chromatin images with Stable Diffusion and improved model performance with hyperparameter tuning.</li>
-                    </ul>
-                </li>
-                <li>
-                    <h3>Research Scholar</h3>
-                    <p><strong>Sreenidhi Institute of Science and Technology, India | September 2019 - December 2021</strong></p>
-                    <ul>
-                        <li>Trained supervised models on paddy disease datasets, achieving 79.58% accuracy with Naive Bayes.</li>
-                        <li>Achieved 86.8% accuracy in rice disease prediction using CNN in R programming.</li>
-                        <li>Volunteer at Swecha Camp, teaching rural children and implementing IoT-based automatic watering systems.</li>
+                        <li>Developed a web app for pathology image analysis, saving colleagues’ time.</li>
+                        <li>Trained Multi-Instance Learning models for colon tumor detection.</li>
+                        <li>Published research on SPIE Medical Imaging Conference.</li>
                     </ul>
                 </li>
             </ul>
         </section>
 
-        <section class="section">
+        <section id="projects">
             <h2>Projects</h2>
             <ul>
-                <li>
-                    <strong>Feature Analysis with Multimodal Model (IdeficsForVisionText2Text) using NASA HiRISE Data:</strong> Fine-tuned a multimodal model to analyze Martian surface structures with image processing techniques and NASA’s HiRISE dataset.
-                </li>
-                <li>
-                    <strong>Alzheimer’s Prediction using Graph Neural Network:</strong> Built a 5-layer GCN model to predict Alzheimer’s stages from brain region connectivity matrices.
-                </li>
+                <li><strong>Feature Analysis with Multimodal Model:</strong> Fine-tuned a multimodal model to analyze Martian surface structures using NASA HiRISE data.</li>
+                <li><strong>Alzheimer’s Prediction using Graph Neural Network:</strong> Built a 5-layer GCN model to predict Alzheimer’s stages from brain region connectivity matrices.</li>
             </ul>
         </section>
 
-        <section class="section">
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <p><strong>Master of Science, Computer Science | GPA: 3.9</strong></p>
-                    <p>University of North Carolina, Greensboro, NC | May 2024</p>
-                </li>
-                <li>
-                    <p><strong>Bachelor of Science, Computer Science and Engineering | GPA: 3.8</strong></p>
-                    <p>Jawaharlal Nehru Technological University, Hyderabad, India | June 2018</p>
-                </li>
-            </ul>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:annemsony.137@gmail.com">annemsony.137@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/sony-annem/" target="_blank">linkedin.com/in/sony-annem</a></p>
         </section>
     </div>
 
@@ -154,3 +141,4 @@
     </footer>
 </body>
 </html>
+
